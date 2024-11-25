@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type="color"] {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Форма авторизації -->
+    <h1>Форма</h1>
+    <form id="dataForm">
+        <label>
+            ПІБ:
+            <input type="text" id="pib" placeholder="Наприклад, Шевченко Ю.В." required>
+        </label>
+        <br>
+        <label>
+            Варіант:
+            <input type="number" id="variant" placeholder="19" required>
+        </label>
+        <br>
+        <label>
+            Група:
+            <input type="text" id="group" placeholder="ІК-24" required>
+        </label>
+        <br>
+        <label>
+            Факультет:
+            <input type="text" id="faculty" placeholder="ФІОТ" required>
+        </label>
+        <br>
+        <label>
+            Дата народження:
+            <input type="text" id="birthDate" placeholder="ДД.ММ.РРРР" required>
+        </label>
+        <button type="button" id="submitBtn">Перевірити</button>
+    </form>
+
+    <!-- Таблиця завдання -->
+    <h2 style="text-align: center;">Таблиця</h2>
+    <div style="text-align: center;">
+        <label for="colorPicker">Обрати колір: </label>
+        <input type="color" id="colorPicker" value="#ff0000">
+    </div>
+    <table id="taskTable"></table>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
